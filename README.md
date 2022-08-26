@@ -2,7 +2,8 @@
 
 To run the app, use the following command
 
-=> pip install -r requirements.txt
+==> pip install -r requirements.txt
+
 ==> python3 app.py
 
 You can then test the features on Postman :
@@ -19,7 +20,6 @@ Json input:
 "last_name":"last name",
 "date_birth": "05/11/1990"
 }
-
 
 
 PUT http://127.0.0.1:5000/users/<user_id>
