@@ -21,10 +21,15 @@ To create an user :
 POST http://127.0.0.1:5000/users
 
 Then go to Body => Raw => Json and create a JSon with following parameters :
+
 {
-    "first_name":"",
-    "last_name":"",
-    "date_birth": ""
+
+"first_name":"",
+
+"last_name":"",
+
+"date_birth": ""
+
 }
 
 To update an user : 
@@ -32,10 +37,15 @@ To update an user :
 PUT http://127.0.0.1:5000/users/<user_id>
 
 Then go to Body => Raw => Json and create a JSon with following parameters :
+
 {
-    "first_name":"",
-    "last_name":"",
-    "date_birth": ""
+
+"first_name":"",
+
+"last_name":"",
+
+"date_birth": ""
+
 }
 
 To add a property : 
@@ -44,13 +54,21 @@ POST http://127.0.0.1:5000/properties/<user_id>
 
 Then go to Body => Raw => Json and create a JSon with following parameters :
 
+
 {
-    "name":"",
-    "description":"",
-    "type":"",
-    "city":"",
-    "rooms": ,
-    "char_rooms":""
+
+"name":"",
+
+"description":"",
+
+"type":"",
+
+"city":"",
+
+"rooms": ,
+
+"char_rooms":""
+
 }
 
 To get property by city :
