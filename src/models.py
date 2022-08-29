@@ -1,4 +1,13 @@
-from flask_sqlalchemy import SQLAlchemy
+from
+    description = db.Column(db.String(250))
+    type = db.Column(db.String(50))
+    city = db.Column(db.String(80))
+    rooms = db.Column(db.Integer)
+    char_rooms = db.Column(db.String(300))
+    owner_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+
+    def __init__(self, name, description, type, city, rooms, char_rooms, owner_id):
+        self.name = nameflask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
@@ -19,15 +28,6 @@ class User(db.Model):
 class Property(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=True)
-    description = db.Column(db.String(250))
-    type = db.Column(db.String(50))
-    city = db.Column(db.String(80))
-    rooms = db.Column(db.Integer)
-    char_rooms = db.Column(db.String(300))
-    owner_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
-
-    def __init__(self, name, description, type, city, rooms, char_rooms, owner_id):
-        self.name = name
         self.description = description
         self.type = type
         self.city = city
